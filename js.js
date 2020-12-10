@@ -70,8 +70,7 @@ const sr = ScrollReveal({
 });
 
 /*SCROLL HOME*/ 
-sr.reveal('.container',{}); 
-sr.reveal('.space' ,{});
+
 
 
   
