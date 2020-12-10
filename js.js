@@ -70,10 +70,9 @@ const sr = ScrollReveal({
   reset: true
 });
 
-/*SCROLL HOME*/ 
-sr.reveal('.container',{interval: 200}); 
+/*SCROLL HOME*/
 sr.reveal('.space' ,{interval: 200});
-sr.reveal('.result',{interval: 200});
+
 
   
 
