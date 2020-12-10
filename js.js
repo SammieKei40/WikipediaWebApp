@@ -2,6 +2,8 @@ const form = document.getElementById('form');
 let search = document.getElementById('search');
 let result = document.getElementById('result');
 let result1 = document.getElementById('result1');
+let result2 = document.getElementById('result2');
+let result3 = document.getElementById('result3');
 
 let resultTitle = document.getElementById('resultTitle');
 const more = document.getElementById('more');
@@ -35,9 +37,9 @@ form.addEventListener('submit', e => {
 
 async function searchWords(term) {
 
-  let searchTerm = search.value.trim();
+  let searchTerm = search.value;
   
-  let apiURL = 'https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=30&srsearch=%27' + `${searchTerm}`;
+  let apiURL = 'https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=30&srsearch=%27' + searchTerm;
 
 
   const res = await fetch(`${apiURL}/suggest/${term}`);
@@ -50,14 +52,31 @@ async function searchWords(term) {
 function showData(data) {
     resultTitle.innerText =  data.query.search[0].title;
     result.innerHTML = data.query.search[0].snippet;
-    result1.innerHTML = data.query.search[1].snippet;
+    result1.innerHTML =  data.query.search[1].snippet;
     result2.innerHTML = data.query.search[2].snippet;
-      
+    result3.innerHTML =  data.query.search[3].snippet;
+    
     link.href = "https://en.wikipedia.org/wiki/" + search.value;
     link.innerHTML = "Read More"; 
 
 
 }
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 2000,
+  reset: true
+});
+
+/*SCROLL HOME*/
+sr.reveal('header',{delay: 100}); 
+sr.reveal('.container',{delay: 100}); 
+sr.reveal('.footer__title' ,{delay: 200});
+sr.reveal('.footer__social' ,{delay: 300});
+sr.reveal('.space' ,{delay: 400});
+
+sr.reveal('.footer' ,{delay: 500});
 
   
 
