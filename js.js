@@ -70,13 +70,13 @@ const sr = ScrollReveal({
 });
 
 /*SCROLL HOME*/
-sr.reveal('header',{delay: 100}); 
+sr.reveal('header',{}); 
 sr.reveal('.container',{delay: 100}); 
-sr.reveal('.footer__title' ,{delay: 200});
-sr.reveal('.footer__social' ,{delay: 300});
-sr.reveal('.space' ,{delay: 400});
+sr.reveal('.footer__title' ,{});
+sr.reveal('.footer__social' ,{});
+sr.reveal('.space' ,{delay: 200});
 
-sr.reveal('.footer' ,{delay: 500});
+sr.reveal('.footer' ,{delay: 200});
 
   
 
