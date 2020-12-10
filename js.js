@@ -72,8 +72,8 @@ const sr = ScrollReveal({
 /*SCROLL HOME*/
 sr.reveal('header',{}); 
 sr.reveal('.container',{delay: 100}); 
-sr.reveal('.space' ,{100});
-sr.reveal('.footer' ,{delay: 100});
+sr.reveal('.space' ,{});
+sr.reveal('.footer' ,{delay: 200});
 
   
 
