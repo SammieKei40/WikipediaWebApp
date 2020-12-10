@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css.css" />
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     
-    <title>Wikipedia App</title>
+    <title>Wikipedia Search App</title>
   </head>
   <body>
     <header>
-      <h1><i><span>Wikipedia</span></i> Web App</h1>
+      <h1 class="glowing"><i><span>Wikipedia</span></i> Web App</h1>
 
       <form id="form">
         <input
@@ -23,17 +23,21 @@
       </form>
     </header>
 
-    <div >
+    <div>
                 
       <h2 id="resultTitle"></h2>
   </div>
 
     <div id="result" class="container">
       <p>Results will be displayed here...</p>
+      
     </div>
-      <p id="result1"></p>
-      <p id="result2"></p>
-    
+
+    <div class="space"> 
+       <p id="result1"></p><br>
+      <p id="result2"></p><br>
+      <p id="result3"></p><br>
+    </div>
       
     </div>
 
@@ -50,18 +54,17 @@
           <a href="http://www.twitter.com/codexsco" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
       </div>
       <p>&#169; 2020 copyright all right reserved</p>
+
+      <div class="container">
+        <p><small> 
+        Designed by <a href="https://github.com/SammieKei40" target="">Codex_Sco</a></small></p>
+    </div>
   </footer>
 
 
-    <footer>
-      <div class="container">
-                <p><small> 
-                Designed by <a href="https://github.com/SammieKei40" target="">Codex_Sco</a></small></p>
-            </div>
-            
-     </footer>
 
-
+     <!--===== SCROLL REVEAL =====-->
+     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js.js"></script>
   </body>
 </html>
