@@ -65,14 +65,14 @@ function showData(data) {
 const sr = ScrollReveal({
   origin: 'top',
   distance: '80px',
-  duration: 2000,
+  duration: 1000,
   reset: true
 });
 
 /*SCROLL HOME*/ 
 sr.reveal('.container',{}); 
 sr.reveal('.space' ,{});
-sr.reveal('.footer' ,{});
+
 
   
 
